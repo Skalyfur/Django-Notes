@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Notas</title>
+
+    {% load static %}
+    <title>Crear Nota</title>
+    <link rel="stylesheet" href="{% static 'notes/styles.css' %}?v={{ timestamp }}">
+</head>
+<body>
+
+    <header>
+        <div class="lista_notas_container">
+            <h1>Lista de Notas</h1>
+
+            <div class="info_note">
+                <a href="{% url 'note_create' %}" class="crear_nota">Crear una nueva nota</a>
+            <ul>
+                {% for note in notes %}
+                    <li>
+                        <strong>{{ note.title }}</strong>: {{ note.content }}
+                        <a href="{% url 'note_delete' note.id %}" class="eliminar_nota">Eliminar</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            </div>
+        </div>
+    </header>
+   
+</body>
+</html>

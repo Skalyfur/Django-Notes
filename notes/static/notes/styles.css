@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #81858C
+}
+
+h1 {
+    color: #333;
+}
+
+
+/* -----------seccion create notes----------- */
+.note-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de la nota */
+.notes_create_container {
+    background-color: #333;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+    text-align: center;
+    justify-content: center;
+}
+
+.notes_create_container h1{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(91,140,245,1) 0%, rgba(240,131,252,1) 79.4% );
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.notes_create_container label{
+    color: #fff;
+}
+
+.notes_create_container  input {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.notes_create_container textarea{
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 150px;
+    max-height: 150px; /* Altura máxima */
+    resize: none; /* Evita el redimensionamiento manual (opcional) */
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+
+button {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(91,140,245,1) 0%, rgba(240,131,252,1) 79.4% );
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+button:hover {
+    color: #81858C;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(31, 70, 145, 0.9) 0%, rgba(100, 20, 130, 0.8) 79.4%);
+
+}
+
+.notes_create_container a{
+    color: #ddd;
+    text-decoration: none;
+   
+}
+
+
+
+/* -----------seccion lista notes----------- */
+
+header{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lista_notas_container{
+    width: 50%;
+    margin-left: 20px;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 30px;
+    height: 80%;
+}
+
+.lista_notas_container h1{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(91,140,245,1) 0%, rgba(240,131,252,1) 79.4% );
+    -webkit-background-clip: text;
+    color: transparent;  
+    
+}
+
+
+.info_note li{
+    color: #F3F3F3;
+}
+
+.crear_nota{
+    color: #fff;
+}
+
+.crear_nota:hover{
+    color: #81858C;
+}
+
+.eliminar_nota{
+    color: royalblue;
+    margin-left: 10px;
+}

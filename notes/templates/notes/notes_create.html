@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Nota</title>
+    {% load static %}
+    
+    <title>Crear Nota</title>
+    <link rel="stylesheet" href="{% static 'notes/styles.css' %}?v={{ timestamp }}">
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="notes_create_container">
+            <h1>Crear Nueva Nota</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="title">Título:</label><br>
+            <input type="text" id="title" name="title"><br><br>
+            <label for="content">Contenido:</label><br>
+            <textarea id="content" name="content"></textarea><br><br>
+            <button type="submit">Guardar</button>
+        </form>
+        <a href="{% url 'note_list' %}">Volver a la lista</a>
+        </div>
+
+    </div>
+    
+
+    
+</body>
+</html>
